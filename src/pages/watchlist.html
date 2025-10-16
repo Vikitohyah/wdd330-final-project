@@ -3,18 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Join Movie Mania today for exclusive access to personalized recommendations, watchlist syncing, and the latest movie updates." />
+    <meta name="description" content="Keep track of your must-watch movies with Movie Mania’s personalized watchlist. Save, organize, and revisit your favorites anytime." />
     <meta name="author" content="Victoria Edorh" />
 
-    <title>Movie Mania Join Page</title>
-    <link rel="icon" href="images/favicon.ico" />
+    <title>Movie Mania Watchlist Page</title>
+    <link rel="icon" href="../assets/images/favicon.ico" />
 
-    <meta property="og:title" content="Movie Mania Join Page" />
-    <meta property="og:description" content="Sign up for Movie Mania and unlock a world of movie magic. Create your watchlist, get tailored suggestions, and never miss a must-see film.">
-
+    <meta property="og:title" content="Movie Mania Watchlist Page" />
+    <meta property="og:description" content="Your personal movie hub. Add, manage, and revisit your favorite films in one easy-to-use watchlist." />
     <meta property="og:locale" content="en_US">
-    <meta property="og:image" content="https://vikitohyah.github.io/wdd231/final-project/images/movie-mania.webp" />
-    <meta property="og:url" content="https://vikitohyah.github.io/wdd231/final-project/index.html" />
+    <meta property="og:image" content="https://vikitohyah.github.io/wdd330-final-project/src/assets/images/movie-mania.webp" />
+    <meta property="og:url" content="https://vikitohyah.github.io/wdd330-final-project/src/index.html" />
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Movie Mania">
     
@@ -32,27 +31,24 @@
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/brands.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/brands.min.css"></noscript>
 
-    <link rel="preload" href="styles/movie.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="styles/movie.css"></noscript>
+    <link rel="preload" href="../styles/movie.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="../styles/movie.css"></noscript>
 
-    <link rel="preload" href="styles/join.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="styles/join.css"></noscript>
-
-    <link rel="preload" href="styles/watchlist.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="styles/watchlist.css"></noscript>
-
-    <script type="module" src="scripts/join.js"></script>
+    <link rel="preload" href="../styles/watchlist.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="../styles/watchlist.css"></noscript>
+    
+    <script type="module" src="../scripts/watchlist.js"></script>
 </head>
 
 <body>
-   <header>
-        <img src="images/logo.webp" id="logo" alt="site-logo" width="50" height="50" loading="lazy">
+    <header>
+        <img src="../assets/images/logo.webp" id="logo" alt="site-logo" width="50" height="50" loading="lazy">
 
         <button id="menu" aria-label="Menu"></button>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="watchlist.html">Watchlist</a>
-            <a href="join.html" class="active">Join</a>
+            <a href="../index.html">Home</a>
+            <a href="watchlist.html" class="active">Watchlist</a>
+            <a href="join.html">Join</a>
         </nav>
         <div class="switch-wrapper">
             <input type="checkbox" id="theme-toggle" />
@@ -61,6 +57,24 @@
             </label>
         </div>
     </header>
+
+    <main>
+        <section class="watchlist-section">
+            <div class="page-header">
+                <h1>🎬 My Watchlist</h1>
+                <p>Keep track of movies you want to watch later</p>
+            </div>
+
+            <div class="movies-container">
+                <div class="movies-grid" id="watchlist-movies"></div>
+            </div>
+
+            <button class="btn">
+                <a href="../index.html">Browse Movies</a>
+            </button>
+        </section>
+
+    </main>
 
     <footer>
         <div class="footer-section contact-info">

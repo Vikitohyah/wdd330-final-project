@@ -39,13 +39,13 @@
 
 <body>
     <header>
-        <img src="images/logo.webp" id="logo" alt="site-logo" width="50" height="50" loading="lazy">
+        <img src="assets/images/logo.webp" id="logo" alt="site-logo" width="50" height="50" loading="lazy">
 
         <button id="menu" aria-label="Menu"></button>
         <nav>
             <a href="index.html" class="active">Home</a>
-            <a href="watchlist.html">Watchlist</a>
-            <a href="join.html">Join</a>
+            <a href="pages/watchlist.html">Watchlist</a>
+            <a href="pages/join.html">Join</a>
         </nav>
         <div class="switch-wrapper">
             <input type="checkbox" id="theme-toggle" />
@@ -60,10 +60,15 @@
             <div class="hero-overlay">
                 <h2 id="hero-title"></h2>
                 <p id="hero-overview"></p>
-                <a href="watchnow.html" id="watch-now">Watch Now</a>
+                <a href="pages/watchnow.html" class="watch-now">Watch Now</a>
             </div>
         </section>
         <div>
+            <div class="search">
+                <input type="text" id="search-input" placeholder="Search Movie..." autocomplete="on">
+                <button id="search-button">Search</button>
+            </div>
+
             <div class="loading-spinner" id="loading-spinner"></div>
             <div class="error-message" id="error-message"></div>
             
@@ -83,7 +88,9 @@
                 <div class="movies-grid" id="category-movies"></div>
             </div>
             
-            <div id="movieDetails" class="movie-details-popup"></div> 
+            <div id="movieDetails" class="movie-details-popup"></div>
+
+            <dialog id="popup-container"></dialog>
         </div> 
     </main>
 

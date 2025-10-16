@@ -1,0 +1,44 @@
+{
+  "name": "wdd330-final-project",
+  "version": "1.0.0",
+  "description": "Wdd final project",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint src/**/*.js",
+    "format": "prettier --ignore-path ./.gitignore --write \"./**/*.{html,json,js,ts,css}\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vikitohyah/wdd330-final-project.git"
+  },
+  "keywords": [],
+  "author": "Victoria Edorh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vikitohyah/wdd330-final-project/issues"
+  },
+  "homepage": "https://github.com/Vikitohyah/wdd330-final-project#readme",
+  "dependencies": {
+    "prettier": "^3.6.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.37.0",
+    "eslint": "^9.37.0",
+    "globals": "^16.4.0"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "browserslist": [
+    "last 3 and_chr versions",
+    "last 3 chrome versions",
+    "last 3 opera versions",
+    "last 3 ios_saf versions",
+    "last 3 safari versions"
+  ]
+}

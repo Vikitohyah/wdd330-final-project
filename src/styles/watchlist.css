@@ -1,0 +1,71 @@
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--color-dark-bg);
+  margin: 0 5px;
+  align-items: center;
+  border-bottom: 3px solid var(--color-brand);
+  text-align: center;
+  
+}
+.page-header h1{
+  padding: 10px;
+  color: var(--color-dark-text);
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.page-header p{
+  color: var(--color-dark-text);
+  text-align: center;
+  margin-right: 8px;
+}
+
+.light-mode .page-header {
+  background-color: var(--color-dark-text);
+}
+
+.light-mode .page-header h1{
+  color: var(--color-brand);
+}
+
+.light-mode .page-header p{
+  color: #333;
+}
+
+.watchlist-section {
+  padding: 2rem 1rem;
+}
+
+.movie-card .remove-btn {
+  background: var(--color-brand);
+  color: #fff;
+  border: none;
+  padding: 0.5rem;
+  margin-top: auto;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.2s ease;
+}
+
+.movie-card .remove-btn:hover {
+  background: var(--color-brand-hover);
+}
+
+.btn{
+  padding: 0.5rem 1rem;
+  background-color:var(--color-brand);
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 10px 5px;
+}
+
+.btn:hover{
+  background-color: var(--color-brand-hover);
+}
+
+.btn a{
+  color: var(--color-dark-text);
+  text-decoration: none;
+}

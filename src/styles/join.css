@@ -1,0 +1,110 @@
+.light-mode .form-container{
+    background-color: rgba(20, 20, 20, 0.9);
+    color: var(--color-dark-text);
+}
+
+.light-mode .form-container input,
+.light-mode .form-container select{
+    background-color: var(--color-light-bg);
+    color: var(--color-light-text);
+}
+
+.container {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.form-container {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: var(--color-light-bg);
+    color: var(--color-light-text);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.form-container h1{
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--color-brand);
+}
+.form-container label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.form-container input, .form-container select {
+    width: 100%;
+    padding: 0.7rem;
+    margin-bottom: 0.4rem;
+    border: none;
+    border-radius: 5px;
+    background: #2a2a2a;
+    font-size: 1rem;
+    color: var(--color-dark-text);
+}
+
+#log-in, #submit {
+    background: #ff2e63;
+    color: var(--color-dark-text);
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#log-in:hover, #submit:hover {
+    background: #ff4f7c;
+}
+
+#submit {
+    margin-top: 1rem;
+}
+
+.error-message {
+    color: #ff4f4f;
+    font-size: 0.9rem;
+    display: none;
+    margin-bottom: 0.5rem;
+}
+
+.switch-link {
+    text-align: center;
+    margin-top: 1rem;
+}
+.switch-link a {
+    color: #ff2e63;
+    text-decoration: none;
+}
+.switch-link a:hover {
+    text-decoration: underline;
+}
+
+.thankyou-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #fefefe;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.thankyou-container h1 {
+  text-align: center;
+  color: #2a2a2a;
+}
+
+.confirmation {
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.confirmation span {
+  font-weight: bold;
+  color: #333;
+}

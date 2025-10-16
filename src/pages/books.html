@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Find streaming platforms to watch your favourites movies and their avialability in your region." />
+    <meta name="description" content="Find movie related books to add more fun to your movie world." />
     <meta name="author" content="Victoria Edorh" />
 
-    <title>Movie Mania Watch-Now Page</title>
-    <link rel="icon" href="images/favicon.ico" />
+    <title>Movie Mania Related Books Page</title>
+    <link rel="icon" href="../assets/images/favicon.ico" />
 
-    <meta property="og:title" content="Movie Mania WatchNow Page" />
-    <meta property="og:description" content="Your personal movie hub. Stream your favorite films." />
+    <meta property="og:title" content="Movie Mania Related books Page" />
+    <meta property="og:description" content="Find movie related books to add more fun to your movie world.">
+
     <meta property="og:locale" content="en_US">
-    <meta property="og:image" content="https://vikitohyah.github.io/wdd330-final-project/images/movie-mania.webp" />
-    <meta property="og:url" content="https://vikitohyah.github.io/wdd330-final-project/index.html" />
+    <meta property="og:image" content="https://vikitohyah.github.io/wdd330/final-project/src/assets/images/movie-mania.webp" />
+    <meta property="og:url" content="https://vikitohyah.github.io/wdd330/final-project/src/index.html" />
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Movie Mania">
     
@@ -31,22 +32,25 @@
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/brands.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/brands.min.css"></noscript>
 
-    <link rel="preload" href="styles/movie.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="styles/movie.css"></noscript>
+    <link rel="preload" href="../styles/movie.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="../styles/movie.css"></noscript>
 
-    <link rel="preload" href="styles/watchnow.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="styles/watchnow.css"></noscript>
-    
-    <script type="module" src="scripts/watchnow.js"></script>
+    <link rel="preload" href="../styles/watchlist.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="../styles/watchlist.css"></noscript>
+
+    <link rel="preload" href="../styles/books.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="../styles/books.css"></noscript>
+
+    <script type="module" src="../scripts/books.js"></script>
 </head>
 
 <body>
-    <header>
-        <img src="images/logo.webp" id="logo" alt="site-logo" width="50" height="50" loading="lazy">
+   <header>
+        <img src="../assets/images/logo.webp" id="logo" alt="site-logo" width="50" height="50" loading="lazy">
 
         <button id="menu" aria-label="Menu"></button>
         <nav>
-            <a href="index.html">Home</a>
+            <a href="../index.html">Home</a>
             <a href="watchlist.html">Watchlist</a>
             <a href="join.html">Join</a>
         </nav>
@@ -59,13 +63,17 @@
     </header>
 
     <main>
-        <section class="watchnow-section">
-            <div class="page-header">
-                <h1>🍿 Stream On</h1>
-                <p>Find the best streaming platfroms in your region</p>
-            </div>
-        </section>
+        <div class="page-header">
+            <h1>📚 Related Books</h1>
+            <p>Discover books inspired by or related to your favorite movies.</p>
+        </div>
+       <div id="books-container" class="books-grid">
+            <p>Loading related books...</p>
+        </div>
 
+        <button class="btn">
+            <a href="../index.html">Browse Movies</a>
+        </button>
     </main>
 
     <footer>
