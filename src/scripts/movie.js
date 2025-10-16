@@ -42,7 +42,7 @@ async function loadHeroMovie() {
         heroOverview.textContent = movie.overview;
 
         document.querySelector('.watch-now').addEventListener('click', () => {
-            window.location.href = `./watchnow.html?id=${movie.id}`;
+            window.location.href = `/watchnow.html?id=${movie.id}`;
         });
 
     } catch (error) {
@@ -138,14 +138,14 @@ async function showMovieDetails(movieId) {
         const watchNowBtn = movieDetails.querySelector(".watchnow");
         if (watchNowBtn) {
             watchNowBtn.addEventListener("click", () => {
-                window.location.href = `./watchnow.html?id=${movie.id}`;
+                window.location.href = `./pages/watchnow.html?id=${movie.id}`;
             });
         }
 
         const relatedBooksBtn = movieDetails.querySelector(".related-books");
         if (relatedBooksBtn) {
             relatedBooksBtn.addEventListener("click", () => {
-                window.location.href = `./books.html?title=${encodeURIComponent(movie.title)}`;
+                window.location.href = `./pages/books.html?title=${encodeURIComponent(movie.title)}`;
             });
         }
  
