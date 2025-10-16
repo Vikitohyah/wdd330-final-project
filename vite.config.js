@@ -13,6 +13,7 @@ export default defineConfig({
         join: resolve(__dirname, "src/pages/join.html"),
         watchnow: resolve(__dirname, "src/pages/watchnow.html"),
         books: resolve(__dirname, "src/pages/books.html"),
+        login: resolve(__dirname, "src/pages/login.html"),
       },
     },
   },

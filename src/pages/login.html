@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Explore the Lagos Chamber of Commerce website by Victoria Edorh. Join the Lagos Chamber of Commerce and gain access to exclusive events, resources, and business support. Empowering businesses through community and collaboration." />
+    <meta name="author" content="Victoria Edorh" />
+
+    <title>Lagos Chamber of Commerce Join Page</title>
+    <link rel="icon" href="images/favicon.ico" />
+
+    <meta property="og:title" content="Lagos Chamber of Commerce Join Page" />
+    <meta property="og:description" content="Join the Lagos Chamber of Commerce and gain access to exclusive events, resources, and business support. Empowering businesses through community and collaboration.">
+
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image" content="https://vikitohyah.github.io/wdd231/chamber/images/lagos.webp" />
+    <meta property="og:url" content="https://vikitohyah.github.io/wdd231/chamber/index.html" />
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Chambers">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Montserrat:wght@400&display=swap" rel="stylesheet">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap">
+    </noscript>
+
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/fontawesome.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/fontawesome.min.css"></noscript>
+
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/brands.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/brands.min.css"></noscript>
+
+    <link rel="preload" href="/styles/movie.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/styles/movie.css"></noscript>
+
+    <link rel="preload" href="/styles/join.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/styles/join.css"></noscript>
+
+    <script type="module" src="/scripts/login.js"></script>
+</head>
+
+<body>
+   <header>
+        <img src="/assets/images/logo.webp" id="logo" alt="site-logo" width="50" height="50" loading="lazy">
+
+        <button id="menu" aria-label="Menu"></button>
+        <nav>
+            <a href="/index.html">Home</a>
+            <a href="/pages/watchlist.html">Watchlist</a>
+            <a href="/pages/join.html" class="active">Join</a>
+        </nav>
+        <div class="switch-wrapper">
+            <input type="checkbox" id="theme-toggle" />
+            <label for="theme-toggle" class="switch-label">
+                <span class="switch-button"></span>
+            </label>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="form-container">
+                <h1>Log In</h1>
+                <form id="login-form" novalidate>
+                    
+                    <label for="email">
+                        Email Address
+                        <input type="email" id="email" name="email" title="Email Address" autocomplete="email" placeholder="you@example.com" required>
+                        <p class="error-message" id="email-error">Please enter a valid email.</p>
+                    </label>
+                    
+                    
+                    <label for="password">
+                        Password
+                        <input type="password" id="password" name="password" title="Password" autocomplete="current-password" placeholder="********" required minlength="6">
+                        <p class="error-message" id="password-error">Password must be at least 6 characters.</p>
+                    </label>
+                    
+                    <input type="submit" value="Log In" id="log-in">
+                </form>
+                <div class="switch-link">
+                    <p>Don't have an account? <a href="/pages/join.html">Create one</a></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-section contact-info">
+            <h3>Movie Mania</h3>
+            <p>1, Idowu Taylor Street, Victoria Island</p>
+            <p>Lagos, Nigeria</p>
+            <p>info@moviemania.org</p>
+            <p>(223) 555-2300</p>
+        </div>
+
+        <div class="footer-section socials">
+            <a href="https://www.youtube.com/" aria-label="YouTube">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="https://www.x.com/" aria-label="Twitter (X)">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="https://www.linkedin.com/" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+        </div>
+
+        <div class="footer-section dev-info">
+            <p>WDD231 Class Final Project</p>
+            <p>Victoria Edorh</p>
+            <p>&copy; <span id="current-year"></span> Movie Mania</p>
+            <a href="https://www.loom.com/share/3f2cea788fe34606b4fbcb8233c38490?sid=ad5e302d-a8ed-4de3-973d-83af7f1ba20b" class="demo">Video Explanation</a>
+            <p id="lastModified"></p>
+            <a href="siteplan.html" class="demo">Reference</a>
+        </div>
+   </footer>
+</body>
+</html>
